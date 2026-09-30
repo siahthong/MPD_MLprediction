@@ -1,0 +1,19 @@
+{
+  "fixed_models": true,
+  "test_structures": 209,
+  "test_parent_groups": 180,
+  "primary_unit": "parent group",
+  "temperature_K": 298,
+  "pressures_bar": {
+    "min": 1e-05,
+    "max": 100,
+    "count": 100,
+    "spacing": "log"
+  },
+  "rmsre_floor": "max(1e-8,1e-6*max target mean N per supercell)",
+  "rmsre_publication_unit": "percent",
+  "bootstrap_seed": 42,
+  "bootstrap_resamples": 10000,
+  "tie_tolerance_percentage_points": 1e-12,
+  "representative_selection": "minimum combined squared distance of PCA+MLP TV, DeepONet TV, PCA+MLP RMSRE, and DeepONet RMSRE percentile ranks from target percentiles 25, 50, and 90; MOF ID tie-break"
+}

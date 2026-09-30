@@ -1,0 +1,61 @@
+{
+  "training_loss": "mse_standardized_masked_low_rank_coefficients",
+  "rank": 30,
+  "best_epoch": 487,
+  "completed_epochs": 687,
+  "stopped_early": true,
+  "best_validation_loss_standardized_coefficient_mse": 0.7066761416480655,
+  "test_loss_standardized_coefficient_mse": 1.708389905232942,
+  "coefficient_mean_baseline_mse": {
+    "train": 0.9999999403953552,
+    "validation": 2.3900558948516846,
+    "test": 2.275888681411743
+  },
+  "test_coefficient_mse_skill_score_vs_mean": 0.24935260709973706,
+  "training_time_seconds": 59.56849202211015,
+  "n_train_mofs": 1676,
+  "n_validation_mofs": 210,
+  "n_test_mofs": 209,
+  "maximum_reconstruction_normalization_error": 4.440892098500626e-16,
+  "reconstruction_metrics": {
+    "train": {
+      "n_mofs": 1676,
+      "mean_lnpi_mae": 4.289752428460934,
+      "median_lnpi_mae": 3.4494086387635576,
+      "mean_lnpi_rmse": 5.297233239177738,
+      "median_lnpi_rmse": 4.405858373878047,
+      "mean_probability_mae": 0.0033792924611613646,
+      "median_probability_mae": 0.0017308728028671287,
+      "mean_probability_rmse": 0.01032561631910202,
+      "median_probability_rmse": 0.006619518106629451,
+      "mean_total_variation_distance": 0.07016916299348111,
+      "median_total_variation_distance": 0.050303038091353225
+    },
+    "validation": {
+      "n_mofs": 210,
+      "mean_lnpi_mae": 6.278228742147422,
+      "median_lnpi_mae": 4.526441603971051,
+      "mean_lnpi_rmse": 7.747758150684205,
+      "median_lnpi_rmse": 5.477059234428609,
+      "mean_probability_mae": 0.005541123186475549,
+      "median_probability_mae": 0.0024694204922061837,
+      "mean_probability_rmse": 0.016044719880739446,
+      "median_probability_rmse": 0.0090889253091768,
+      "mean_total_variation_distance": 0.09417359521843664,
+      "median_total_variation_distance": 0.0692709298915867
+    },
+    "test": {
+      "n_mofs": 209,
+      "mean_lnpi_mae": 7.422175654618063,
+      "median_lnpi_mae": 5.18882111935088,
+      "mean_lnpi_rmse": 9.16912063493371,
+      "median_lnpi_rmse": 6.593986062000033,
+      "mean_probability_mae": 0.003963427182152717,
+      "median_probability_mae": 0.0025300907618339926,
+      "mean_probability_rmse": 0.012674688981711644,
+      "median_probability_rmse": 0.009696120498588947,
+      "mean_total_variation_distance": 0.09211717134726388,
+      "median_total_variation_distance": 0.07112498967000264
+    }
+  }
+}

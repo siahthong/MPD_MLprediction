@@ -1,0 +1,51 @@
+{
+  "criterion": "smallest scanned rank where >=95% of 1886 training and validation MOFs pass TV<=0.05 and 273K RMSRE<=0.2, separately for each gas",
+  "selected_rank": 30,
+  "ranks": [
+    20,
+    25,
+    30,
+    35,
+    40
+  ],
+  "tv_limit": 0.05,
+  "rmsre_limit": 0.2,
+  "target_fraction": 0.95,
+  "reference_temperature_K": 298.0,
+  "reference_pressure_bar": 0.1,
+  "evaluation_temperature_K": 273.0,
+  "energy_provenance": [
+    {
+      "gas": "CO2",
+      "energy_roots_in_priority_order": [
+        "/home/akarisiah/calculation/MPD_isotherm_reweight_pipeline/CO2_MPD_data"
+      ],
+      "energy_filename": "averages_CO2_likeformat.csv"
+    },
+    {
+      "gas": "CH4",
+      "energy_roots_in_priority_order": [
+        "/home/akarisiah/calculation/bulk_isotherms_from_MPD/CH4_MPD_data",
+        "/home/akarisiah/calculation/MPD_isotherm_reweight_pipeline/CH4_MPD_data"
+      ],
+      "energy_filename": "averages_methane_likeformat.csv"
+    },
+    {
+      "gas": "N2",
+      "energy_roots_in_priority_order": [
+        "/home/akarisiah/calculation/bulk_isotherms_from_MPD/N2_MPD_data",
+        "/home/akarisiah/calculation/MPD_isotherm_reweight_pipeline/N2_MPD_data"
+      ],
+      "energy_filename": "averages_N2_likeformat.csv"
+    }
+  ],
+  "pressure_grid_bar": {
+    "minimum": 1e-05,
+    "maximum": 100.0,
+    "count": 100,
+    "spacing": "geometric/logarithmic",
+    "source_expression": "numpy.geomspace(1e-5, 100.0, 100)"
+  },
+  "population": "training + validation",
+  "population_size": 1886
+}

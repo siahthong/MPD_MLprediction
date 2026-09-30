@@ -1,0 +1,35 @@
+{
+  "CO2": {
+    "structures": 2095,
+    "split_counts": {
+      "train": 1676,
+      "val": 210,
+      "test": 209
+    },
+    "base_feature_count": 6,
+    "energy_feature_count": 28,
+    "total_feature_count": 34
+  },
+  "CH4": {
+    "structures": 2095,
+    "split_counts": {
+      "train": 1676,
+      "val": 210,
+      "test": 209
+    },
+    "base_feature_count": 6,
+    "energy_feature_count": 14,
+    "total_feature_count": 20
+  },
+  "N2": {
+    "structures": 2095,
+    "split_counts": {
+      "train": 1676,
+      "val": 210,
+      "test": 209
+    },
+    "base_feature_count": 6,
+    "energy_feature_count": 14,
+    "total_feature_count": 20
+  }
+}
